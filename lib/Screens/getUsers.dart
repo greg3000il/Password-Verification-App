@@ -47,6 +47,7 @@ class getAllUserState extends State<getusers> {
       body: Container(
         child: FutureBuilder(
           future: getUsers(),
+          //If you dont get any data from the database I.E no connection\no users it will show the error icon on screen
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             if (snapshot.data == null) {
               return Container(child: Center(child: Icon(Icons.error)));
