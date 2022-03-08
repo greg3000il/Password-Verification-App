@@ -18,7 +18,7 @@ class userDrawerState extends State<userDrawer> {
         title: Text("User Management"),
       ),
       body: Center(
-        child: Text("Welcome to the app"),
+        child: Text("Welcome to the app, Press the Drawer on the the top left to see more options"),
       ),
       drawer: Drawer(
         child: ListView(
